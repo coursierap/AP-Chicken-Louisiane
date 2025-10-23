@@ -1,0 +1,40 @@
+
+header { 
+  background-color: #f9db8d;
+      padding: 10px; 
+      text-align: center;   
+      height: auto;
+}
+nav {
+  background-color: #ccd5ae;
+  text-align: center;
+  margin: 10px;
+  padding: 2px;
+}
+nav a {
+  text-decoration: none;
+  color: #6196b5;
+}
+.titre1 {
+  color: rgb(230, 67, 67);
+}
+.titre2 {
+  color: rgb(158, 79, 30);
+}
+body {
+  background-color: #f5f5dc;
+}
+.chicken {
+  color: rgb(158, 79, 30);
+
+}
+#logo {
+  height: 150px;
+  width: 140px;
+  display: block;
+  margin: auto;
+}
+footer {
+  background-color: #f9db8d;
+  text-transform: uppercase;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html> 
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" /> <!-- Métadonnées -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscription</title> <!-- Titre de la page (affiché dans l’onglet) -->
+    <link rel="stylesheet" href="style.css" /> <!-- Lien vers la feuille de style CSS -->
+  </head>
+  <body>
+    <header> <!-- En-tête de la page -->
+      <h1>Inscription</h1> <!-- Titre principal -->
+    </header>
+    <main>
+      <form method="post" action="traitement.php">
+        <fieldset>
+          <legend>Formulaire de connexion</legend>
+          <label>Indiquez votre Nom :</label>
+          <input type="text" name="nom"/> <br> <br>
+          <label>Indiquez votre Prénom :</label>
+          <input type="text" name="prenom"/> <br> <br>
+          <label for="birthdate">Date de naissance :</label> 
+          <input type="date" id="birthdate" name="birthdate"/> <br> <br>
+          <label for="postale">Adresse postale :</label>
+          <input type="text" id="postale" name="postale"/> <br> <br>
+          <label for="pays">Votre pays </label>
+          <select name="pays" id="pays">
+            <optgroup label="Europe">
+              <option value="france">France</option>
+              <option value="espagne">Espagne</option>
+              <option value="italie">Italie</option>
+            </optgroup>
+            <optgroup label="Amérique">
+              <option value="canada">Canada</option>
+              <option value="etats-unis">États-Unis</option>
+              <option value="bresil">Brésil</option>
+            </optgroup>
+            <optgroup label="Asie">
+              <option value="chine">Chine</option>
+              <option value="japon">Japon</option>
+              <option value="inde">Inde</option>
+            </optgroup>
+          </select> <br> <br>
+          <label for="email">Adresse mail</label>
+          <input type="email" id="email" name="email"/> <br> <br>
+          <label for="tel">Téléphone</label>
+          <input type="tel" id="tel" name="phone"/> <br> <br>
+          <select name="sexe">
+            <option value="homme">Homme</option>
+            <option value="femme">Femme</option>
+            <option value="autre">Ne souhaite pas répondre</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Formulaire d'inscription</legend>
+          <label for="newsletter-oui">Je souhaite m'inscrire à la Newsletter</label>
+          <input type="radio" id="newsletter-oui" name="newsletter" value="oui"/> <br> <br>
+          <label for="newsletter-non">Je ne souhaite pas m'inscrire à la Newsletter</label>
+          <input type="radio" id="newsletter-non" name="newsletter" value="non"/> <br> <br>
+          <select name="newlsetter">
+            <option value="generaliste">Newsletter Généraliste</option>
+            <option value="burger">Newsletter Burgers</option>
+            <option value="frites">Newsletter Frites</option>
+            <option value="poulet">Newsletter Poulet</option>
+            <option value="promotions">Newsletter Promotions</option>
+            <option value="aucun">Aucune Newsletter</option>
+          </select> <br> <br>
+          <input type="submit" value="Envoyer"/>
+        </fieldset>
+        </form>
+  <fieldset>
+    <legend>Formulaire de contact</legend>
+    <form method="post" action="traitement.php">
+      <label for="name">Nom</label>
+      <input type="text" id="name" name="name"/> 
+      <label for="prenom">Prénom</label>
+      <input type="text" id="prenom" name="prenom"/> 
+      <label for="email_contact">Adresse mail</label>
+      <input type="email" id="email_contact" name="email_contact"/> 
+      <label for="idees">Sujet</label>
+      <select name="idees" id="idees">
+        <option value="idee">Idées</option>
+        <option value="question">Questions</option>
+        <option value="probleme">Problème de connexion</option>
+      </select> 
+      <br><br>
+      <label for="commentaire">Expliquez votre message ici :</label>
+      <textarea name="commentaire" id="commentaire"></textarea>
+      <br><br>
+      <input type="submit" value="Envoyer ma demande"/>
+    </form>
+  </fieldset>
+    </main>
+  </body>
+</html>

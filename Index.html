@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" /> <!-- Métadonnées -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chicken Louisiane Steakhouse</title> <!-- Titre de la page (affiché dans l’onglet) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/> <!-- Lien vers les icônes Google -->
+    <link rel="stylesheet" href="style.css" /> <!-- Lien vers la feuille de style CSS -->
+  </head> 
+  <body>
+    <header> <!-- En-tête de la page -->
+      <h1><span class="titre1">Le Chicken Louisiane</span> <span class="titre2">Steakhouse </span></h1> <!-- Titre principal -->
+      <h2 class="presentation"> <span class="bienvenue">Bienvenue sur le site du </span> <span class="chicken">Chicken Louisiane</span></h2>
+      <a href="images/louisiane.gif">
+        <img src="images/louisiane.gif" id="logo" alt="Gif animé du Chicken Louisiane"
+        title="Cliquez pour voir en tailler réelle">
+      </a>
+      <h2>Un goût unique exclusif de chez <mark>Burger King</mark></h2> <!-- Sous-titre -->
+      <p><a href="#ingredients">Découvrez la recette secrète du Chicken Louisiane !</a> </p>
+      <img src ="images/burger.webp" height="250" alt="Photo du Chicken Louisiane Steakhouse" />
+      <h3>Pourquoi est-ce le meilleur burger inventé ?</h3> <!-- Deuxième sous-titre -->
+    </header>
+      <nav> <!-- Menu de navigation -->
+        <a href="histoire.html">L'histoire de Burger King</a>
+        <a href="burger.html">D'autres Burgers !</a>
+        <a href="oignon.html">Les frites et oignon rings !</a>
+        <a href="contact.html" target="_blank">Contact</a>
+        <a href="inscription.html">Inscription</a>
+        <a href="https://www.burgerking.fr/produit/chicken-louisiane-steakhouse-premium" title="Vous avez faim ? C'est par ici !">Testez le Burger !</a>
+    </nav>
+    <main> <!-- Contenu principal -->
+      <ul> <!-- Liste non ordonnée : histoire, ingrédients, goût -->
+        <li>
+          <span class="material-symbols-outlined">book</span> <u>Son histoire :</u>
+          <p>
+            Le <i>Chicken Louisiane Steakhouse</i> est un burger qui a été créé en 2004 par
+            la chaîne de restauration rapide <b>Burger King.</b> Il a été conçu
+            pour offrir une alternative épicée aux burgers traditionnels, en
+            s'inspirant des saveurs de la cuisine cajun et créole de la
+            Louisiane.
+          </p>
+        </li>
+        <li id="ingredients">
+         <span class="material-symbols-outlined">lunch_dining</span> <u>Ses ingrédients :</u>
+          <p>
+            Le <em>Chicken Louisiane Steakhouse</em> se compose
+            <strong>
+              d'un filet de poulet croustillant, assaisonné avec un mélange
+              d'épices cajun, de laitue fraîche, de tomates juteuses, de fromage
+              cheddar fondu et d'une sauce crémeuse à base de mayonnaise et de
+              piments. Le tout est servi dans un pain moelleux et légèrement
+              grillé.
+            </strong>
+          </p>
+        </li>
+        <li>
+          <span class="material-symbols-outlined">fork_spoon</span> <u>Le goût :</u>
+          <p>
+            Le <em>Chicken Louisiane Steakhouse</em> offre une
+            <strong>explosion de saveurs épicées et savoureuses</strong>.<br>
+            Le filet de poulet croustillant apporte une texture agréable, tandis
+            que les épices cajun ajoutent une touche de piquant qui réveille les
+            papilles. La sauce crémeuse équilibre parfaitement les
+            saveurs, tandis que la fraîcheur de la laitue et des tomates
+            complète l'ensemble.
+          </p>
+        </li>
+      </ul>
+      <p><b>Caractéristiques :</b></p>
+      <ol> <!-- Liste ordonnée : caractéristiques -->
+        <li>Son prix : 11,50€ en menu. Contre 8,50€ en solo.</li>
+        <li>Valeur énergétique : 846 kcal.</li>
+      </ol>
+      <dl> <!-- Liste de définitions -->
+        <dt>Un Burger :</dt>
+        <dd>
+          Un burger est un sandwich composé d'un pain coupé en deux,
+          généralement garni d'une galette de viande hachée (comme du bœuf, du
+          poulet ou du poisson), accompagnée de divers ingrédients tels que du
+          fromage, de la laitue, des tomates, des oignons, des cornichons et des
+          sauces. Les burgers sont souvent servis avec des frites et sont
+          populaires dans la restauration rapide.
+        </dd>
+        <dt>Un fast-food :</dt>
+        <dd>
+          Un fast-food est un type de restaurant qui propose des repas préparés
+          rapidement.
+        </dd>
+      </dl> <!-- Pied de page -->
+    </main>
+    <footer>
+      <picture>
+        <source srcset="images/burger_moyen.png" media="(max-width: 600px)" />
+        <source srcset="images/burger_petit.svg.png" media="(min-width: 601px) and (max-width: 800px)" />
+        <source srcset="images/burger_large.png" media ="(min-width: 801px)" />
+        <img src="images/burger_moyen.png" height="100" alt="logo bk" />
+      </picture>
+      <p>
+        <i>par raphaël coursier, en ap html au lycée guy-mollet.</i>
+      </p>
+    </footer>
+  </body>
+</html>
